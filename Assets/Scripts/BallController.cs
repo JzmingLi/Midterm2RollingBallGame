@@ -64,6 +64,7 @@ public class BallController : MonoBehaviour
         _rb.velocity = _constantVelocity;
         GameObject.Find("MainCamera").GetComponent<CameraBehaviour>().enabled = false;
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().enabled = false;
+        GameObject.Find("UIManager").GetComponent<UIManager>().GameOver();
         enabled = false;
     }
 }
